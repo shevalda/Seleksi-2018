@@ -1,7 +1,8 @@
-all: clean build run
+all:
+	clean run
 
-clean: # remove data and binary folder
+clean:
+	rm data/data.json src/__pycache__
 
-build: # compile to binary (if you use interpreter, then do not implement it)
-
-run: # run your binary
+run:
+	python src/scraping.py
